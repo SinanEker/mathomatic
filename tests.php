@@ -6,11 +6,7 @@
  * @filename tests.php
  * */
 
-require_once 'src/Metrics.class.php';
-require_once 'src/Service/Service.class.php';
-Service::gzip(function($render){
-  return $render->gzip('json');
-});
+require_once 'Metrics.class.php';
 use \square\Metrics;
 $m = new Metrics();
 
